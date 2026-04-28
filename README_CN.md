@@ -174,9 +174,10 @@ Results: 6 total, 2 OK, 3 SKIP, 1 FAIL
 ## 🔧 从源码构建
 
 ```bash
-git clone https://github.com/jianzhoujz/homebrew-tap.git
-cd homebrew-tap/scripts
-./build-unquarantine.sh
+git clone https://github.com/jianzhoujz/unquarantine.git
+cd unquarantine
+go build -o unquarantine .
+sudo mv unquarantine /usr/local/bin/
 ```
 
 要求：Go 1.21+

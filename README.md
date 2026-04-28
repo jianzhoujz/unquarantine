@@ -174,9 +174,10 @@ History is stored at `~/.local/share/unquarantine/history.json`.
 ## 🔧 Build from Source
 
 ```bash
-git clone https://github.com/jianzhoujz/homebrew-tap.git
-cd homebrew-tap/scripts
-./build-unquarantine.sh
+git clone https://github.com/jianzhoujz/unquarantine.git
+cd unquarantine
+go build -o unquarantine .
+sudo mv unquarantine /usr/local/bin/
 ```
 
 Requirements: Go 1.21+
